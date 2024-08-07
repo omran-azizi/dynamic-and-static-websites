@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>static Web</title>
+     <style>
+      .A{
+        background-color: rgb(76, 15, 197);
+        border-radius: 10px;
+        height: 10vh;
+        width: 100%;
+        margin: 20px;
+        -webkit-box-shadow: -15px 13px 10px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -15px 13px 10px 0px rgba(0,0,0,0.75);
+box-shadow: -15px 13px 10px 0px rgba(0,0,0,0.75);
+       } 
+       #first-div{
+        background-color: rgb(29, 197, 130);
+        border-radius: 10px;
+        height: 10vh;
+        width: 100%;
+        margin: 20px;
+        -webkit-box-shadow: -15px 13px 10px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -15px 13px 10px 0px rgba(0,0,0,0.75);
+box-shadow: -15px 13px 10px 0px rgba(0,0,0,0.75);
+       }
+       button:hover{
+       background-color: brown;
+       color: bisque;
+       }
+     </style>
+    </head>
+<body>
+      <div id="first-div">
+
+      </div>
+  
+
+
+      <div class="A" >
+
+      </div>
+      <div class="A" >
+
+      </div>
+
+
+     <div>
+        <button onclick="changecolor()">Click Me </button>
+     </div> 
+
+     <script>
+        function changecolor(){
+            document.getElementById('first-div').style.backgroundColor='blue';
+          var a=document.getElementsByClassName('A');
+          a[0].style.backgroundColor="yellow";
+          a[1].style.backgroundColor="purple";
+          
+        }
+     </script>
+</body>
+</html>
